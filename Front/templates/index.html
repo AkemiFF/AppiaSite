@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -40,6 +39,16 @@
     />
     <link
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
       href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
     />
     <style>
@@ -56,97 +65,92 @@
     </style>
   </head>
   <body>
-    <link rel="stylesheet" href="{% static style.css %}" />
+    <link rel="stylesheet" href="./style.css" />
     <div>
-      <link href="{% static index.css %}" rel="stylesheet" />
+      <link href="./index.css" rel="stylesheet" />
 
       <div class="home-container">
-        <div class="home-header">
-          <header
-            data-thq="thq-navbar"
-            class="navbarContainer home-navbar-interactive"
-          >
-            <span class="logo">CALLCENTER</span>
-            <div data-thq="thq-navbar-nav" class="home-desktop-menu">
-              <nav class="home-links">
-                <span class="bodySmall">Home</span>
-                <span class="home-nav22 bodySmall">Services</span>
-                <span class="home-nav32 bodySmall">About Us</span>
-                <span class="home-nav42 bodySmall">Contact Us</span>
+        <div class="home-header"></div>
+        <header
+          data-thq="thq-navbar"
+          class="navbarContainer home-navbar-interactive"
+        >
+          <span class="logo">Appialogo</span>
+          <div data-thq="thq-navbar-nav" class="home-desktop-menu">
+            <nav class="home-links">
+              <span class="bodySmall">Acceuil</span>
+              <span class="home-nav22 bodySmall">Services</span>
+              <span class="home-nav32">A propos</span>
+              <span class="home-nav321 bodySmall">Recrutement</span>
+              <span class="home-nav42 bodySmall">Contact</span>
+            </nav>
+            <div class="home-buttons">
+              <button class="home-login buttonFlat">Se connecter</button>
+              <button class="buttonFilled">S'inscrire</button>
+            </div>
+          </div>
+          <div data-thq="thq-burger-menu" class="home-burger-menu">
+            <svg viewBox="0 0 1024 1024" class="home-icon socialIcons">
+              <path
+                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+              ></path>
+            </svg>
+          </div>
+          <div data-thq="thq-mobile-menu" class="home-mobile-menu1 mobileMenu">
+            <div class="home-nav">
+              <div class="home-top">
+                <span class="logo">CALLCENTER</span>
+                <div data-thq="thq-close-menu" class="home-close-menu">
+                  <svg viewBox="0 0 1024 1024" class="home-icon02 socialIcons">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <nav class="home-links1">
+                <span class="home-nav121 bodySmall">Home</span>
+                <span class="home-nav221 bodySmall">Services</span>
+                <span class="home-nav322 bodySmall">About Us</span>
+                <span class="home-nav421 bodySmall">Contact Us</span>
               </nav>
-              <div class="home-buttons">
-                <button class="home-login buttonFlat">Login</button>
+              <div class="home-buttons1">
+                <button class="buttonFlat">Login</button>
                 <button class="buttonFilled">Register</button>
               </div>
             </div>
-            <div data-thq="thq-burger-menu" class="home-burger-menu">
-              <svg viewBox="0 0 1024 1024" class="home-icon socialIcons">
+            <div>
+              <svg
+                viewBox="0 0 950.8571428571428 1024"
+                class="home-icon04 socialIcons"
+              >
                 <path
-                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                ></path></svg
+              ><svg
+                viewBox="0 0 877.7142857142857 1024"
+                class="home-icon06 socialIcons"
+              >
+                <path
+                  d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                ></path></svg
+              ><svg
+                viewBox="0 0 602.2582857142856 1024"
+                class="home-icon08 socialIcons"
+              >
+                <path
+                  d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
                 ></path>
               </svg>
             </div>
-            <div
-              data-thq="thq-mobile-menu"
-              class="home-mobile-menu1 mobileMenu"
-            >
-              <div class="home-nav">
-                <div class="home-top">
-                  <span class="logo">CALLCENTER</span>
-                  <div data-thq="thq-close-menu" class="home-close-menu">
-                    <svg
-                      viewBox="0 0 1024 1024"
-                      class="home-icon02 socialIcons"
-                    >
-                      <path
-                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <nav class="home-links1">
-                  <span class="home-nav121 bodySmall">Home</span>
-                  <span class="home-nav221 bodySmall">Services</span>
-                  <span class="home-nav321 bodySmall">About Us</span>
-                  <span class="home-nav421 bodySmall">Contact Us</span>
-                </nav>
-                <div class="home-buttons1">
-                  <button class="buttonFlat">Login</button>
-                  <button class="buttonFilled">Register</button>
-                </div>
-              </div>
-              <div>
-                <svg
-                  viewBox="0 0 950.8571428571428 1024"
-                  class="home-icon04 socialIcons"
-                >
-                  <path
-                    d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
-                  ></path></svg
-                ><svg
-                  viewBox="0 0 877.7142857142857 1024"
-                  class="home-icon06 socialIcons"
-                >
-                  <path
-                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
-                  ></path></svg
-                ><svg
-                  viewBox="0 0 602.2582857142856 1024"
-                  class="home-icon08 socialIcons"
-                >
-                  <path
-                    d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-          </header>
-        </div>
+          </div>
+        </header>
         <div class="home-hero">
           <div class="heroContainer home-hero1">
             <div class="home-container01">
               <h1 class="home-hero-heading heading1">
-                Empower Your Customer Service with Our Call Center Solutions
+                Renforcez votre service client avec nos solutions de centre
+                d'appels
               </h1>
               <span class="home-hero-sub-heading bodyLarge">
                 <span>
@@ -171,8 +175,8 @@
                 </span>
               </span>
               <div class="home-btn-group">
-                <button class="buttonFilled">Get Started</button>
-                <button class="buttonFlat">Learn More&nbsp;→</button>
+                <button class="buttonFilled">Commencer</button>
+                <button class="buttonFlat">A propos →</button>
               </div>
             </div>
           </div>
@@ -181,11 +185,10 @@
           <div class="featuresContainer">
             <div class="home-features1">
               <div class="home-container02">
-                <span class="overline">
-                  <span>features</span>
-                  <br />
-                </span>
-                <h2 class="home-features-heading heading2">Our Features</h2>
+                <span class="overline">fonctionnalités</span>
+                <h2 class="home-features-heading heading2">
+                  Nos fonctionnalités
+                </h2>
                 <span class="home-features-sub-heading bodyLarge">
                   <span>
                     <span>
@@ -295,7 +298,9 @@
                 <span>Pricing</span>
                 <br />
               </span>
-              <h2 class="heading2">Choose the Right Plan for Your Business</h2>
+              <h2 class="heading2">
+                Choisissez le bon plan pour votre entreprise
+              </h2>
               <span class="home-pricing-sub-heading bodyLarge">
                 <span>
                   <span>
@@ -307,14 +312,14 @@
             <div class="home-container05">
               <div class="freePricingCard home-pricing-card">
                 <div class="home-container06">
-                  <span class="home-text36 heading3">Free</span>
+                  <span class="home-text34 heading3">GRATUIT</span>
                   <span class="bodySmall">
-                    Ideal for small businesses looking to get started with call
-                    center services
+                    Idéal pour les petites entreprises souhaitant commencer avec
+                    des services de centre d'appels
                   </span>
                 </div>
                 <div class="home-container07">
-                  <span class="home-text37">
+                  <span class="home-text35">
                     <span>$</span>
                     <span></span>
                   </span>
@@ -322,115 +327,117 @@
                 </div>
                 <div class="home-container08">
                   <div class="home-container09">
-                    <span class="home-text40">✔</span>
-                    <span class="bodySmall">Up to 50 calls per month</span>
+                    <span class="home-text38">✔</span>
+                    <span class="bodySmall">Jusqu'à 50 appels par mois</span>
                   </div>
                   <div class="home-container10">
-                    <span class="home-text41">✔</span>
-                    <span class="bodySmall">Basic call routing</span>
+                    <span class="home-text39">✔</span>
+                    <span class="bodySmall">Routage d'appels de base</span>
                   </div>
                   <div class="home-container11">
-                    <span class="home-text42">✔</span>
-                    <span class="bodySmall">Email support</span>
+                    <span class="home-text40">✔</span>
+                    <span class="bodySmall">Support par e-mail</span>
                   </div>
                   <div class="home-container12">
-                    <span class="home-text43">✔</span>
-                    <span class="bodySmall">Basic reporting</span>
+                    <span class="home-text41">✔</span>
+                    <span class="bodySmall">Rapports de base</span>
                   </div>
                 </div>
                 <button class="home-button buttonOutline">
-                  Continue with Free
+                  Continuer avec GRATUIT
                 </button>
               </div>
               <div class="basicPricingCard home-pricing-card1">
                 <div class="home-container13">
-                  <span class="home-text44 heading3">BASIC</span>
+                  <span class="home-text42 heading3">bASE</span>
                   <span class="bodySmall">
-                    Great for growing businesses that need more advanced call
-                    center features
+                    Idéal pour les entreprises en croissance qui ont besoin de
+                    fonctionnalités de centre d'appels plus avancées
                   </span>
                 </div>
                 <div class="home-container14">
-                  <span class="home-text45">
+                  <span class="home-text43">
                     <span>$</span>
                     <span></span>
                   </span>
                   <span class="home-basic-plan-pricing">50</span>
-                  <span class="home-text48">/ month</span>
+                  <span class="home-text46">/ mois</span>
                 </div>
                 <div class="home-container15">
                   <div class="home-container16">
-                    <span class="home-text49">✔</span>
-                    <span class="bodySmall">All features of FREE plan</span>
+                    <span class="home-text47">✔</span>
+                    <span class="bodySmall">
+                      Toutes les fonctionnalités du plan GRATUIT
+                    </span>
                   </div>
                   <div class="home-container17">
-                    <span class="home-text51">✔</span>
-                    <span class="bodySmall">Up to 200 calls per month</span>
+                    <span class="home-text49">✔</span>
+                    <span class="bodySmall">Jusqu'à 200 appels par mois</span>
                   </div>
                   <div class="home-container18">
-                    <span class="home-text52">✔</span>
-                    <span class="bodySmall">Advanced call routing</span>
+                    <span class="home-text50">✔</span>
+                    <span class="bodySmall">Routage d'appels avancé</span>
                   </div>
                   <div class="home-container19">
-                    <span class="home-text53">✔</span>
-                    <span class="bodySmall">Live chat support</span>
+                    <span class="home-text51">✔</span>
+                    <span class="bodySmall">Support par chat en direct</span>
                   </div>
                   <div class="home-container20">
-                    <span class="home-text54">✔</span>
-                    <span class="bodySmall">Customizable reporting</span>
+                    <span class="home-text52">✔</span>
+                    <span class="bodySmall">Rapports personnalisables</span>
                   </div>
                 </div>
                 <button class="home-button1 buttonFilledSecondary">
-                  Try the Basic plan
+                  Essayez le plan de BASE
                 </button>
               </div>
               <div class="proPricingCard home-pricing-card2">
                 <div class="home-container21">
-                  <span class="home-text55 heading3">
+                  <span class="home-text53 heading3">
                     <span>PRO</span>
                     <br />
                   </span>
                   <span class="bodySmall">
-                    Perfect for established businesses requiring top-tier call
-                    center solutions
+                    Parfait pour les entreprises établies nécessitant des
+                    solutions de centre d'appels de premier ordre
                   </span>
                 </div>
                 <div class="home-container22">
-                  <span class="home-text58">
+                  <span class="home-text56">
                     <span>$</span>
                     <span></span>
                   </span>
                   <span class="home-pro-plan-pricing">100</span>
-                  <span class="home-text61">/ month</span>
+                  <span class="home-text59">/ mois</span>
                 </div>
                 <div class="home-container23">
                   <div class="home-container24">
-                    <span class="home-text62">✔</span>
+                    <span class="home-text60">✔</span>
                     <span class="bodySmall">
-                      &nbsp;All features of BASIC plan
+                      Toutes les fonctionnalités du plan DE BASE
                     </span>
                   </div>
                   <div class="home-container25">
-                    <span class="home-text64">✔</span>
-                    <span class="bodySmall">Unlimited calls per month</span>
+                    <span class="home-text62">✔</span>
+                    <span class="bodySmall">Appels illimités par mois</span>
                   </div>
                   <div class="home-container26">
-                    <span class="home-text65">✔</span>
-                    <span class="bodySmall">VIP call routing</span>
+                    <span class="home-text63">✔</span>
+                    <span class="bodySmall">Routage d'appels VIP</span>
                   </div>
                   <div class="home-container27">
-                    <span class="home-text66">✔</span>
-                    <span class="bodySmall">24/7 phone and chat support</span>
+                    <span class="home-text64">✔</span>
+                    <span class="bodySmall">
+                      Support téléphonique et par chat 24/7
+                    </span>
                   </div>
                   <div class="home-container28">
-                    <span class="home-text67">✔</span>
-                    <span class="bodySmall">
-                      Advanced analytics and reporting
-                    </span>
+                    <span class="home-text65">✔</span>
+                    <span class="bodySmall">Analyse avancée et reporting</span>
                   </div>
                 </div>
                 <button class="home-button2 buttonFilledSecondary">
-                  Try the PRO plan
+                  Essayez le plan PRO
                 </button>
               </div>
             </div>
@@ -439,7 +446,7 @@
         <div class="home-banner">
           <div class="bannerContainer home-banner1">
             <h1 class="home-banner-heading heading2">
-              Elevate Your Customer Support
+              Améliorez votre service client
             </h1>
             <span class="home-banner-sub-heading bodySmall">
               <span>
@@ -469,7 +476,7 @@
                 </span>
               </span>
             </span>
-            <button class="buttonFilled">Learn More</button>
+            <button class="buttonFilled">En savoir plus</button>
           </div>
         </div>
         <div class="home-faq">
@@ -480,94 +487,24 @@
                   <span>FAQ</span>
                   <br />
                 </span>
-                <h2 class="home-text85 heading2">Common questions</h2>
-                <span class="home-text86 bodyLarge">
-                  <span>
-                    Here are some of the most common questions that we get.
-                  </span>
-                  <br />
+                <h2 class="home-text83 heading2">Questions fréquentes</h2>
+                <span class="home-text84 bodyLarge">
+                  Voici quelques-unes des questions les plus fréquemment posées.
                 </span>
               </div>
-              <div class="home-container30">
-                <div class="question1-container">
-                  <span class="question1-text heading3">
-                    <span>What services does your call center offer?</span>
-                  </span>
-                  <span class="bodySmall">
-                    <span>
-                      We offer a range of services including inbound and
-                      outbound call handling, customer support, order
-                      processing, and more.
-                    </span>
-                  </span>
-                </div>
-                <div class="question1-container">
-                  <span class="question1-text heading3">
-                    <span>How can I reach your call center?</span>
-                  </span>
-                  <span class="bodySmall">
-                    <span>
-                      You can reach our call center by phone at [phone number]
-                      or by email at [email address].
-                    </span>
-                  </span>
-                </div>
-                <div class="question1-container">
-                  <span class="question1-text heading3">
-                    <span>Are your call center agents trained?</span>
-                  </span>
-                  <span class="bodySmall">
-                    <span>
-                      Yes, our call center agents undergo extensive training to
-                      ensure they provide top-quality service to our clients.
-                    </span>
-                  </span>
-                </div>
-                <div class="question1-container">
-                  <span class="question1-text heading3">
-                    <span>
-                      Can I customize the scripts used by your call center
-                      agents?
-                    </span>
-                  </span>
-                  <span class="bodySmall">
-                    <span>
-                      Yes, we offer script customization options to tailor the
-                      interactions to your specific needs and requirements.
-                    </span>
-                  </span>
-                </div>
-                <div class="question1-container">
-                  <span class="question1-text heading3">
-                    <span>What are your call center operating hours?</span>
-                  </span>
-                  <span class="bodySmall">
-                    <span>
-                      Our call center operates [hours of operation] on [days of
-                      the week]. However, we also offer 24/7 support options for
-                      certain services.
-                    </span>
-                  </span>
-                </div>
-              </div>
+              <div class="home-container30"></div>
             </div>
           </div>
         </div>
         <div class="home-footer">
           <footer class="footerContainer home-footer1">
             <div class="home-container31">
-              <span class="logo">CALLCENTER</span>
-              <nav class="home-nav1">
-                <span class="bodySmall">Home</span>
-                <span class="home-nav222 bodySmall">Services</span>
-                <span class="home-nav322 bodySmall">About Us</span>
-                <span class="home-nav422 bodySmall">Contact Us</span>
-              </nav>
+              <span class="logo">Appialogo</span>
             </div>
             <div class="home-separator"></div>
             <div class="home-container32">
-              <span class="bodySmall home-text89">
-                © 2023 myCompany, All Rights Reserved.
+              <span class="bodySmall home-text85">
+                © 2023 Appia, All Rights Reserved.
               </span>
               <div class="home-icon-group1">
                 <svg
