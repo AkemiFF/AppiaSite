@@ -372,3 +372,7 @@
   line-height: 150%;
   text-transform: uppercase;
 }
+.logo-size {
+  height: auto;
+  width: 6em;
+}
