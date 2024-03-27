@@ -5,10 +5,11 @@
 {% block content %}
 <div>
   <div class="home-container">
-    <div class="home-header"></div>
     {% include "include/header.html" %}
     <div class="home-hero">
+      {% include "include/slider.html" %}
       <div class="heroContainer home-hero1">
+
         <div class="home-container01">
           <h1 class="home-hero-heading heading1">
             Renforcez votre service client avec nos solutions de centre
@@ -18,32 +19,17 @@
             <span>
               <span>
                 <span>Delivering Exceptional Customer Experiences</span>
-                <span></span>
-              </span>
-              <span>
-                <span></span>
-                <span></span>
-              </span>
-            </span>
-            <span>
-              <span>
-                <span></span>
-                <span></span>
-              </span>
-              <span>
-                <span></span>
-                <span></span>
               </span>
             </span>
           </span>
           <div class="home-btn-group">
-            <button class="buttonFilled">Commencer</button>
-            <button class="buttonFlat">A propos →</button>
+            <a href="#start"><button class="buttonFilled">Commencer</button></a>
+            <a href={% url 'apropos' %}><button class="buttonFlat">A propos →</button></a>
           </div>
         </div>
       </div>
     </div>
-    <div class="home-features">
+    <div class="home-features" id="start">
       <div class="featuresContainer">
         <div class="home-features1">
           <div class="home-container02">
@@ -52,28 +38,7 @@
               Nos fonctionnalités
             </h2>
             <span class="home-features-sub-heading bodyLarge">
-              <span>
-                <span>
-                  <span>
-                    Discover the key features that set our call center apart
-                  </span>
-                  <span></span>
-                </span>
-                <span>
-                  <span></span>
-                  <span></span>
-                </span>
-              </span>
-              <span>
-                <span>
-                  <span></span>
-                  <span></span>
-                </span>
-                <span>
-                  <span></span>
-                  <span></span>
-                </span>
-              </span>
+              Discover the key features that set our call center apart
             </span>
           </div>
           <div class="home-container03">
@@ -170,191 +135,6 @@
               </span>
             </span>
           </span>
-        </div>
-        <div class="home-container05">
-          <div class="freePricingCard home-pricing-card">
-            <div class="home-container06">
-              <span class="home-text34 heading3">GRATUIT</span>
-              <span class="bodySmall">
-                Idéal pour les petites entreprises souhaitant commencer avec
-                des services de centre d'appels
-              </span>
-            </div>
-            <div class="home-container07">
-              <span class="home-text35">
-                <span>$</span>
-                <span></span>
-              </span>
-              <span class="home-free-plan-price">0</span>
-            </div>
-            <div class="home-container08">
-              <div class="home-container09">
-                <span class="home-text38">✔</span>
-                <span class="bodySmall">Jusqu'à 50 appels par mois</span>
-              </div>
-              <div class="home-container10">
-                <span class="home-text39">✔</span>
-                <span class="bodySmall">Routage d'appels de base</span>
-              </div>
-              <div class="home-container11">
-                <span class="home-text40">✔</span>
-                <span class="bodySmall">Support par e-mail</span>
-              </div>
-              <div class="home-container12">
-                <span class="home-text41">✔</span>
-                <span class="bodySmall">Rapports de base</span>
-              </div>
-            </div>
-            <button class="home-button buttonOutline">
-              Continuer avec GRATUIT
-            </button>
-          </div>
-          <div class="basicPricingCard home-pricing-card1">
-            <div class="home-container13">
-              <span class="home-text42 heading3">bASE</span>
-              <span class="bodySmall">
-                Idéal pour les entreprises en croissance qui ont besoin de
-                fonctionnalités de centre d'appels plus avancées
-              </span>
-            </div>
-            <div class="home-container14">
-              <span class="home-text43">
-                <span>$</span>
-                <span></span>
-              </span>
-              <span class="home-basic-plan-pricing">50</span>
-              <span class="home-text46">/ mois</span>
-            </div>
-            <div class="home-container15">
-              <div class="home-container16">
-                <span class="home-text47">✔</span>
-                <span class="bodySmall">
-                  Toutes les fonctionnalités du plan GRATUIT
-                </span>
-              </div>
-              <div class="home-container17">
-                <span class="home-text49">✔</span>
-                <span class="bodySmall">Jusqu'à 200 appels par mois</span>
-              </div>
-              <div class="home-container18">
-                <span class="home-text50">✔</span>
-                <span class="bodySmall">Routage d'appels avancé</span>
-              </div>
-              <div class="home-container19">
-                <span class="home-text51">✔</span>
-                <span class="bodySmall">Support par chat en direct</span>
-              </div>
-              <div class="home-container20">
-                <span class="home-text52">✔</span>
-                <span class="bodySmall">Rapports personnalisables</span>
-              </div>
-            </div>
-            <button class="home-button1 buttonFilledSecondary">
-              Essayez le plan de BASE
-            </button>
-          </div>
-          <div class="proPricingCard home-pricing-card2">
-            <div class="home-container21">
-              <span class="home-text53 heading3">
-                <span>PRO</span>
-                <br />
-              </span>
-              <span class="bodySmall">
-                Parfait pour les entreprises établies nécessitant des
-                solutions de centre d'appels de premier ordre
-              </span>
-            </div>
-            <div class="home-container22">
-              <span class="home-text56">
-                <span>$</span>
-                <span></span>
-              </span>
-              <span class="home-pro-plan-pricing">100</span>
-              <span class="home-text59">/ mois</span>
-            </div>
-            <div class="home-container23">
-              <div class="home-container24">
-                <span class="home-text60">✔</span>
-                <span class="bodySmall">
-                  Toutes les fonctionnalités du plan DE BASE
-                </span>
-              </div>
-              <div class="home-container25">
-                <span class="home-text62">✔</span>
-                <span class="bodySmall">Appels illimités par mois</span>
-              </div>
-              <div class="home-container26">
-                <span class="home-text63">✔</span>
-                <span class="bodySmall">Routage d'appels VIP</span>
-              </div>
-              <div class="home-container27">
-                <span class="home-text64">✔</span>
-                <span class="bodySmall">
-                  Support téléphonique et par chat 24/7
-                </span>
-              </div>
-              <div class="home-container28">
-                <span class="home-text65">✔</span>
-                <span class="bodySmall">Analyse avancée et reporting</span>
-              </div>
-            </div>
-            <button class="home-button2 buttonFilledSecondary">
-              Essayez le plan PRO
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="home-banner">
-      <div class="bannerContainer home-banner1">
-        <h1 class="home-banner-heading heading2">
-          Améliorez votre service client
-        </h1>
-        <span class="home-banner-sub-heading bodySmall">
-          <span>
-            <span>
-              <span>
-                Our call center services are designed to enhance customer
-                satisfaction, increase efficiency, and drive business
-                growth. With a team of dedicated professionals and
-                cutting-edge technology, we ensure seamless interactions
-                with your customers.
-              </span>
-              <span></span>
-            </span>
-            <span>
-              <span></span>
-              <span></span>
-            </span>
-          </span>
-          <span>
-            <span>
-              <span></span>
-              <span></span>
-            </span>
-            <span>
-              <span></span>
-              <span></span>
-            </span>
-          </span>
-        </span>
-        <button class="buttonFilled">En savoir plus</button>
-      </div>
-    </div>
-    <div class="home-faq">
-      <div class="faqContainer">
-        <div class="home-faq1">
-          <div class="home-container29">
-            <span class="overline">
-              <span>FAQ</span>
-              <br />
-            </span>
-            <h2 class="home-text83 heading2">Questions fréquentes</h2>
-            <span class="home-text84 bodyLarge">
-              Voici quelques-unes des questions les plus fréquemment posées.
-            </span>
-          </div>
-          <div class="home-container30"></div>
         </div>
       </div>
     </div>
