@@ -32,7 +32,7 @@ body {
     background-color: #111111;
     position: relative;
     margin: auto;
-    z-index: 5;
+    /* z-index: 5; */
     overflow: hidden;
     display: flex;
     align-items: center;
