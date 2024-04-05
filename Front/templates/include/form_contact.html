@@ -1,0 +1,20 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/contact_form.css' %}">
+<div class="contact_form" id="contact_form">
+    <button class="btn-close" id="contact_btn_off">X</button>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="part-I">
+            <h2>Nous Ecrire</h2>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom..">
+            <input type="text" id="societe" name="societe" placeholder="Votre société..">
+            <input type="text" id="adresse" name="adresse" placeholder="Votre adresse..">
+            <input type="text" id="telFixe" name="telFixe" placeholder="Votre téléphone fixe..">
+            <input type="text" id="telMobile" name="telMobile" placeholder="Votre téléphone mobile..">
+        </div>
+        <div class="part-II">
+            <textarea id="besoin" name="besoin" placeholder="Expliquez votre besoin.." style="height:200px"></textarea>
+            <input type="submit" value="Envoyer">
+        </div>
+    </form>
+</div>

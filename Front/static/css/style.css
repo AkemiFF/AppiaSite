@@ -1,5 +1,11 @@
 :root {
   --dl-color-gray-500: #595959;
+  --appia-main-color: #d3ae61;
+  --main-border-radius: 8px;
+  --bg-nav: #000;
+  --main-bg-gray: #272a33;
+  --second-bg-gray: #1d1e23;
+
   --dl-color-gray-700: #999999;
   --dl-color-gray-900: #D9D9D9;
   --dl-size-size-large: 144px;
@@ -39,6 +45,10 @@
   --dl-color-custom-neutral-dark: #000000;
   --dl-color-custom-neutral-light: #FFFFFF;
   --dl-space-space-oneandhalfunits: 24px;
+}
+
+body {
+  background-color: var(--dl-color-gray-700);
 }
 
 .button {
@@ -91,18 +101,22 @@
 
 .buttonFilled {
   color: var(--dl-color-custom-neutral-light);
-  transition: 0.3s;
+
+  cursor: pointer;
   font-family: Lato;
   font-weight: bold;
   padding-top: var(--dl-space-space-halfunit);
   padding-left: var(--dl-space-space-oneandhalfunits);
   padding-right: var(--dl-space-space-oneandhalfunits);
   padding-bottom: var(--dl-space-space-halfunit);
-  background-color: var(--dl-color-custom-primary1);
+  background-color: var(--appia-main-color);
+  border-radius: var(--main-border-radius);
+  transition: 0.3s;
 }
 
 .buttonFilled:hover {
-  background-color: var(--dl-color-custom-primary2);
+  background-color: var(--dl-color-custom-neutral-light);
+  color: var(--dl-color-custom-neutral-dark);
 }
 
 .buttonFilledSecondary {
@@ -118,7 +132,8 @@
 }
 
 .buttonFilledSecondary:hover {
-  background-color: var(--dl-color-custom-primary2);
+  background-color: var(--dl-color-custom-neutral-light);
+  color: var(--dl-color-custom-neutral-dark);
 }
 
 .buttonOutline {
@@ -135,12 +150,20 @@
 
 .buttonFlat {
   color: var(--dl-color-custom-neutral-dark);
+  cursor: pointer;
   font-family: Lato;
   font-weight: bold;
   padding-top: var(--dl-space-space-halfunit);
   padding-left: var(--dl-space-space-oneandhalfunits);
   padding-right: var(--dl-space-space-oneandhalfunits);
   padding-bottom: var(--dl-space-space-halfunit);
+  border-radius: var(--main-border-radius);
+  transition: 0.3s;
+}
+
+.buttonFlat:hover {
+  background-color: var(--appia-main-color);
+  color: var(--dl-color-custom-neutral-dark);
 }
 
 .featuresContainer {
@@ -223,15 +246,19 @@
 
 .navbarContainer {
   width: 100%;
+  height: 5em;
   display: flex;
-  position: sticky;
+  position: fixed;
   align-items: center;
   padding-top: var(--dl-space-space-oneandhalfunits);
   padding-left: var(--dl-space-space-threeunits);
   padding-right: var(--dl-space-space-threeunits);
   padding-bottom: var(--dl-space-space-oneandhalfunits);
   justify-content: space-between;
-  background-color: var(--dl-color-custom-neutral-light);
+  background-color: var(--bg-nav);
+  margin: 0;
+  border-bottom-left-radius: 10em;
+  z-index: 900;
 }
 
 .mobileMenu {
@@ -241,15 +268,17 @@
 .heroContainer {
   width: 100%;
   display: flex;
-  min-height: auto;
+  min-height: 28em;
+  position: absolute;
   align-items: center;
-  padding-top: var(--dl-space-space-sixunits);
+  padding-top: 1em;
   padding-left: var(--dl-space-space-threeunits);
   padding-right: var(--dl-space-space-threeunits);
   flex-direction: column;
   padding-bottom: var(--dl-space-space-sixunits);
   justify-content: center;
-  background-color: var(--dl-color-custom-neutral-light);
+  /* z-index: 10; */
+  background-color: #9999993d;
 }
 
 .pricingContainer {
@@ -263,7 +292,7 @@
   flex-direction: column;
   padding-bottom: var(--dl-space-space-fourunits);
   justify-content: center;
-  background-color: var(--dl-color-custom-neutral-light);
+  /* background-color: var(--dl-color-custom-neutral-light); */
 }
 
 .bannerContainer {
@@ -281,6 +310,7 @@
 
 .footerContainer {
   width: 100%;
+  height: 5em;
   display: flex;
   align-items: center;
   padding-top: var(--dl-space-space-twounits);
@@ -289,11 +319,13 @@
   flex-direction: column;
   padding-bottom: var(--dl-space-space-twounits);
   justify-content: space-between;
-  background-color: var(--dl-color-custom-neutral-light);
+  background-color: #000;
+  position: fixed;
+  bottom: 0;
 }
 
 .socialIcons {
-  fill: var(--dl-color-custom-neutral-dark);
+  fill: var(--dl-color-custom-neutral-light);
 }
 
 .Content {
@@ -325,7 +357,8 @@
 
 .logo-container img {
   height: auto;
-  width: 4em;
+  width: 3em;
+  border-radius: 55px;
 }
 
 .heading1 {
@@ -360,6 +393,8 @@
 
 .bodySmall {
   font-size: 16px;
+  text-decoration: none;
+  color: var(--dl-color-custom-neutral-light);
   font-family: Lato;
   font-weight: 400;
   line-height: 150%;
@@ -372,7 +407,70 @@
   line-height: 150%;
   text-transform: uppercase;
 }
+
 .logo-size {
   height: auto;
   width: 6em;
+}
+
+.form-group {
+  text-indent: 2em;
+  margin-bottom: 20px;
+  margin: 2em 3em;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: var(--main-border-radius);
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 180px;
+}
+
+.submit {
+  background-color: var(--appia-main-color);
+  color: #fff;
+  font-weight: bold;
+  right: 5em;
+  width: 8em;
+  position: absolute;
+  border: none;
+  margin: 1em 2em;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .6s ease;
+}
+
+.submit:hover {
+  background-color: #6185d3;
+}
+
+.submit:active {
+  background-color: #61d3ae;
+  transform: translateY(1px);
+}
+
+.form-contact {
+  background-color: var(--dl-color-gray-700);
+  /* background-color: #000; */
+  align-items: center;
+  width: 100%;
+  min-height: 500px;
+}
+
+.home-pricing {
+  min-height: 500px;
 }
