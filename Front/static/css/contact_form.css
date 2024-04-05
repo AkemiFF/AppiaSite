@@ -55,6 +55,10 @@
     background-color: transparent;
 }
 
+.contact_form form .part-II input:active {
+    background-color: var(--appia-main-color);
+}
+
 .contact_form form {
     height: 100%;
     width: 100%;
